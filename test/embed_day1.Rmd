@@ -6,6 +6,7 @@ always_allow_html: true
 output:
   md_document:
     variant: gfm
+  css: "hl.css"
 ---
 
 <script>
@@ -66,14 +67,6 @@ function showResults(myq, qc, rc){
   rc.innerHTML = `${numCorrect} out of ${myq.length}`;
 }
 </script>
-
-
-<style>
-/* Tweak output background */
-.language-plaintext {
-background-color: lightyellow;
-}
-</style>
 
 
 ```{r echo=FALSE}

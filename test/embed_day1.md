@@ -56,12 +56,6 @@ function showResults(myq, qc, rc){
   rc.innerHTML = `${numCorrect} out of ${myq.length}`;
 }
 </script>
-<style>
-/* Tweak output background */
-.language-plaintext {
-background-color: lightyellow;
-}
-</style>
 
 # R and RStudio
 
