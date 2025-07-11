@@ -57,7 +57,11 @@ function buildQuiz(myq, qc){
 }
 </script>
 <style type="text/css">
-pre.r-output, div.output, pre[class*="r-output"] {
+pre {
+  background-color: #f4f4f4 !important;
+  color: #333;
+}
+&#10;pre.r-output, div.output, pre[class*="r-output"] {
   background-color: #e9f5ff !important;
   color: #005577;
 }
