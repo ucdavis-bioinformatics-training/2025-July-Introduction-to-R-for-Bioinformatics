@@ -57,12 +57,10 @@ function buildQuiz(myq, qc){
 }
 </script>
 <style type="text/css">
-.colsel {
-background-color: lightyellow;
-}
-&#10;pre, code {
-  white-space:pre !important;
-  overflow-x:scroll auto
+div.output {
+  background-color: #fdf6e3; /* Solarized light */
+  padding: 10px;
+  border-radius: 5px;
 }
 </style>
 
