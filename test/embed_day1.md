@@ -651,7 +651,7 @@ Submit Quiz
 quizContainer1 = document.getElementById('quiz1');
 resultsContainer1 = document.getElementById('results1');
 submitButton1 = document.getElementById('submit1');
-&#10;myQuestions1 = [
+myQuestions1 = [
   {
     question: "Create a variable a and set it to 3, and a variable b set to 'gene'. What is a + b?",
     answers: {
@@ -683,7 +683,7 @@ submitButton1 = document.getElementById('submit1');
     correctAnswer: "a"
   }
 ];
-&#10;buildQuiz(myQuestions1, quizContainer1);
+buildQuiz(myQuestions1, quizContainer1);
 submitButton1.addEventListener('click', function() {showResults(myQuestions1, quizContainer1, resultsContainer1);});
 </script>
 
