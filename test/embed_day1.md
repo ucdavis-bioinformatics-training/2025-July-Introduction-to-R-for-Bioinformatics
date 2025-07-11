@@ -2,14 +2,14 @@
 function buildQuiz(myq, qc){
   // variable to store the HTML output
   const output = [];
-&#10;// for each question...
+// for each question...
   myq.forEach(
     (currentQuestion, questionNumber) => {
-&#10;      // variable to store the list of possible answers
+      // variable to store the list of possible answers
       const answers = [];
-&#10;      // and for each available answer...
+      // and for each available answer...
       for(letter in currentQuestion.answers){
-&#10;        // ...add an HTML radio button
+        // ...add an HTML radio button
         answers.push(
           `<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -18,32 +18,32 @@ function buildQuiz(myq, qc){
           </label><br/>`
         );
       }
-&#10;      // add this question and its answers to the output
+      // add this question and its answers to the output
       output.push(
         `<div class="question"> ${currentQuestion.question} </div>
         <div class="answers"> ${answers.join('')} </div><br/>`
       );
     }
   );
-&#10;  // finally combine our output list into one string of HTML and put it on the page
+  // finally combine our output list into one string of HTML and put it on the page
   qc.innerHTML = output.join('');
 }
-&#10;function showResults(myq, qc, rc){
-&#10;  // gather answer containers from our quiz
+function showResults(myq, qc, rc){
+  // gather answer containers from our quiz
   const answerContainers = qc.querySelectorAll('.answers');
-&#10;  // keep track of user's answers
+ // keep track of user's answers
   let numCorrect = 0;
-&#10;  // for each question...
+ // for each question...
   myq.forEach( (currentQuestion, questionNumber) => {
-&#10;    // find selected answer
+   // find selected answer
     const answerContainer = answerContainers[questionNumber];
     const selector = `input[name=question${questionNumber}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-&#10;    // if answer is correct
+   // if answer is correct
     if(userAnswer === currentQuestion.correctAnswer){
       // add to the number of correct answers
       numCorrect++;
-&#10;      // color the answers green
+     // color the answers green
       answerContainers[questionNumber].style.color = 'lightgreen';
     }
     // if answer is wrong or blank
@@ -52,7 +52,7 @@ function buildQuiz(myq, qc){
       answerContainers[questionNumber].style.color = 'red';
     }
   });
-&#10;  // show number of correct answers out of total
+ // show number of correct answers out of total
   rc.innerHTML = `${numCorrect} out of ${myq.length}`;
 }
 </script>
