@@ -13,7 +13,7 @@ function buildQuiz(myq, qc){
   // variable to store the HTML output
   const output = [];
 
-  // for each question...
+// for each question...
   myq.forEach(
     (currentQuestion, questionNumber) => {
 

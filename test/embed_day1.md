@@ -2,7 +2,7 @@
 function buildQuiz(myq, qc){
   // variable to store the HTML output
   const output = [];
-&#10;  // for each question...
+&#10;// for each question...
   myq.forEach(
     (currentQuestion, questionNumber) => {
 &#10;      // variable to store the list of possible answers
