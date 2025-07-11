@@ -6,7 +6,6 @@ always_allow_html: true
 output:
   md_document:
     variant: gfm
-  css: "hl.css"
 ---
 
 <script>
