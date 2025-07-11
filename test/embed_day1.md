@@ -57,7 +57,11 @@ function buildQuiz(myq, qc){
 }
 </script>
 <style type="text/css">
-&#10;</style>
+pre.r-output, div.output, pre[class*="r-output"] {
+  background-color: #e9f5ff !important;
+  color: #005577;
+}
+</style>
 
 # R and RStudio
 
