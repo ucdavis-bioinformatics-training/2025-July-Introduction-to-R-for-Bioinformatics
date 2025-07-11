@@ -58,14 +58,8 @@ function showResults(myq, qc, rc){
 </script>
 <style>
 /* Tweak output background */
-pre {
-  background-color: #f4f4f4 !important;
-  color: #333;
-}
-/* More precise if using knitr classes */
-pre.r-output, div.output, pre[class*="r-output"] {
-  background-color: #e0f7fa !important;
-  color: #006064;
+.language-plaintext {
+background-color: lightyellow;
 }
 </style>
 
@@ -880,7 +874,7 @@ Submit Quiz
 quizContainer2 = document.getElementById('quiz2');
 resultsContainer2 = document.getElementById('results2');
 submitButton2 = document.getElementById('submit2');
-&#10;myQuestions2 = [
+myQuestions2 = [
   {
     question: "Create a new factor with levels specified. What happens when the factor contains elements that are not included in the levels?",
     answers: {
@@ -912,7 +906,7 @@ submitButton2 = document.getElementById('submit2');
     correctAnswer: "d"
   }
 ];
-&#10;buildQuiz(myQuestions2, quizContainer2);
+buildQuiz(myQuestions2, quizContainer2);
 submitButton2.addEventListener('click', function() {showResults(myQuestions2, quizContainer2, resultsContainer2);});
 </script>
 
@@ -1222,7 +1216,7 @@ Submit Quiz
 quizContainer3 = document.getElementById('quiz3');
 resultsContainer3 = document.getElementById('results3');
 submitButton3 = document.getElementById('submit3');
-&#10;myQuestions3 = [
+myQuestions3 = [
   {
     question: "Find a function to add up the EGFR column in md2. What is the total?",
     answers: {
@@ -1244,7 +1238,7 @@ submitButton3 = document.getElementById('submit3');
     correctAnswer: "c"
   }
 ];
-&#10;buildQuiz(myQuestions3, quizContainer3);
+buildQuiz(myQuestions3, quizContainer3);
 submitButton3.addEventListener('click', function() {showResults(myQuestions3, quizContainer3, resultsContainer3);});
 </script>
 
