@@ -56,14 +56,16 @@ function buildQuiz(myq, qc){
   rc.innerHTML = `${numCorrect} out of ${myq.length}`;
 }
 </script>
-<style type="text/css">
+<style>
+/* Tweak output background */
 pre {
   background-color: #f4f4f4 !important;
   color: #333;
 }
-&#10;pre.r-output, div.output, pre[class*="r-output"] {
-  background-color: #e9f5ff !important;
-  color: #005577;
+&#10;/* More precise if using knitr classes */
+pre.r-output, div.output, pre[class*="r-output"] {
+  background-color: #e0f7fa !important;
+  color: #006064;
 }
 </style>
 

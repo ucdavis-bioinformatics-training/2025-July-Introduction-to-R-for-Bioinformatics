@@ -82,17 +82,19 @@ function showResults(myq, qc, rc){
 </script>
 
 
-```{css echo=FALSE}
+<style>
+/* Tweak output background */
 pre {
   background-color: #f4f4f4 !important;
   color: #333;
 }
 
+/* More precise if using knitr classes */
 pre.r-output, div.output, pre[class*="r-output"] {
-  background-color: #e9f5ff !important;
-  color: #005577;
+  background-color: #e0f7fa !important;
+  color: #006064;
 }
-```
+</style>
 
 
 ```{r echo=FALSE}
