@@ -245,7 +245,7 @@ Description
 <tbody>
 <tr>
 <td style="text-align:center;">
-\<-, =
+&lt;-, =
 </td>
 <td style="text-align:center;">
 Assignment
@@ -270,62 +270,63 @@ Description
 <tbody>
 <tr>
 <td style="text-align:center;">
-\+
-</td>
-<td style="text-align:center;">
-Addition
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-\-
-</td>
-<td style="text-align:center;">
-Subtraction
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-\*
-</td>
-<td style="text-align:center;">
-Multiplication
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-/
-</td>
-<td style="text-align:center;">
-Division
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-^
-</td>
-<td style="text-align:center;">
-Exponent
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-%%
-</td>
-<td style="text-align:center;">
-Modulus
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-%/%
-</td>
-<td style="text-align:center;">
-Integer Division
-</td>
-</tr>
-</tbody>
-</table>
+
+- </td>
+  <td style="text-align:center;">
+  Addition
+  </td>
+  </tr>
+  <tr>
+  <td style="text-align:center;">
+
+  - </td>
+    <td style="text-align:center;">
+    Subtraction
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:center;">
+
+    - </td>
+      <td style="text-align:center;">
+      Multiplication
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align:center;">
+      /
+      </td>
+      <td style="text-align:center;">
+      Division
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align:center;">
+      ^
+      </td>
+      <td style="text-align:center;">
+      Exponent
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align:center;">
+      %%
+      </td>
+      <td style="text-align:center;">
+      Modulus
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align:center;">
+      %/%
+      </td>
+      <td style="text-align:center;">
+      Integer Division
+      </td>
+      </tr>
+      </tbody>
+      </table>
+
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 Relational Operators in R
@@ -343,7 +344,7 @@ Description
 <tbody>
 <tr>
 <td style="text-align:center;">
-\<
+&lt;
 </td>
 <td style="text-align:center;">
 Less than
@@ -351,7 +352,7 @@ Less than
 </tr>
 <tr>
 <td style="text-align:center;">
-\>
+&gt;
 </td>
 <td style="text-align:center;">
 Greater than
@@ -359,7 +360,7 @@ Greater than
 </tr>
 <tr>
 <td style="text-align:center;">
-\<=
+&lt;=
 </td>
 <td style="text-align:center;">
 Less than or equal to
@@ -367,7 +368,7 @@ Less than or equal to
 </tr>
 <tr>
 <td style="text-align:center;">
-\>=
+&gt;=
 </td>
 <td style="text-align:center;">
 Greater than or equal to
