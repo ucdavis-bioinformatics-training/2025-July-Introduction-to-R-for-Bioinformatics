@@ -83,10 +83,8 @@ function showResults(myq, qc, rc){
 
 
 ```{css echo=FALSE}
-div.output {
-  background-color: #fdf6e3; /* Solarized light */
-  padding: 10px;
-  border-radius: 5px;
+pre {
+  background-color: #eef;  /* light purple-blue for output blocks */
 }
 ```
 

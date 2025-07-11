@@ -57,10 +57,8 @@ function buildQuiz(myq, qc){
 }
 </script>
 <style type="text/css">
-div.output {
-  background-color: #fdf6e3; /* Solarized light */
-  padding: 10px;
-  border-radius: 5px;
+pre {
+  background-color: #eef;  /* light purple-blue for output blocks */
 }
 </style>
 
