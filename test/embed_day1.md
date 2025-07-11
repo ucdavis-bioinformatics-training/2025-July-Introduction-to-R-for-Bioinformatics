@@ -433,7 +433,7 @@ Logical AND
 </tr>
 <tr>
 <td style="text-align:center;">
-&amp;#124;
+&#124;
 </td>
 <td style="text-align:center;">
 Element-wise logical OR
@@ -441,7 +441,7 @@ Element-wise logical OR
 </tr>
 <tr>
 <td style="text-align:center;">
-&amp;#124;&amp;#124;
+&#124;&#124;
 </td>
 <td style="text-align:center;">
 Logical OR
