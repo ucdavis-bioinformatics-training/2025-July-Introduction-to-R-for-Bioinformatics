@@ -67,11 +67,6 @@ function showResults(myq, qc, rc){
 }
 </script>
 
-<style>
-.colsel {
-background-color: lightyellow
-}
-</style>
 
 ```{r echo=FALSE}
 library(knitr)
@@ -87,9 +82,8 @@ colFmt = function(x,color){
 ```
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(class.source = "colsel", echo=TRUE)
 knitr::knit_hooks$set(output = function(x, options) {
-  paste0('<pre style="color: green; background-color: #f0f0f0;">', x, '</pre>')
+  paste0('<pre style="color: black; background-color: lightyellow;">', x, '</pre>')
 })
 ```
 

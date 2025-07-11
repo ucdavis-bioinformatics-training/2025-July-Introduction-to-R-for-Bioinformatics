@@ -56,11 +56,6 @@ function showResults(myq, qc, rc){
   rc.innerHTML = `${numCorrect} out of ${myq.length}`;
 }
 </script>
-<style>
-.colsel {
-background-color: lightyellow
-}
-</style>
 
 # R and RStudio
 
@@ -224,7 +219,7 @@ In R, to get help information on a funciton, one may use the command:
 
 - OPERATIONS
 
-<pre style="color: green; background-color: #f0f0f0;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<pre style="color: black; background-color: lightyellow;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>Assignment Operators in R</caption>
  <thead>
   <tr>
@@ -240,7 +235,7 @@ In R, to get help information on a funciton, one may use the command:
 </tbody>
 </table>
 &#10;</pre>
-<pre style="color: green; background-color: #f0f0f0;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<pre style="color: black; background-color: lightyellow;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>Arithmetic Operators in R</caption>
  <thead>
   <tr>
@@ -280,7 +275,7 @@ In R, to get help information on a funciton, one may use the command:
 </tbody>
 </table>
 &#10;</pre>
-<pre style="color: green; background-color: #f0f0f0;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<pre style="color: black; background-color: lightyellow;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>Relational Operators in R</caption>
  <thead>
   <tr>
@@ -316,7 +311,7 @@ In R, to get help information on a funciton, one may use the command:
 </tbody>
 </table>
 &#10;</pre>
-<pre style="color: green; background-color: #f0f0f0;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<pre style="color: black; background-color: lightyellow;"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>Logical Operators in R</caption>
  <thead>
   <tr>
@@ -395,7 +390,7 @@ a <- 150
 a
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 150
+<pre style="color: black; background-color: lightyellow;">## [1] 150
 </pre>
 
 ``` r
@@ -404,7 +399,7 @@ b <- 3e-2
 b
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 0.03
+<pre style="color: black; background-color: lightyellow;">## [1] 0.03
 </pre>
 
 <br>
@@ -417,7 +412,7 @@ gene <- "BRCA1"
 gene
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "BRCA1"
+<pre style="color: black; background-color: lightyellow;">## [1] "BRCA1"
 </pre>
 
 ``` r
@@ -426,7 +421,7 @@ hello <- "Hello World"
 hello
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "Hello World"
+<pre style="color: black; background-color: lightyellow;">## [1] "Hello World"
 </pre>
 
 <br>
@@ -439,7 +434,7 @@ brca1_expressed <- TRUE
 brca1_expressed
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] TRUE
+<pre style="color: black; background-color: lightyellow;">## [1] TRUE
 </pre>
 
 ``` r
@@ -448,7 +443,7 @@ her2_expressed <- FALSE
 her2_expressed
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] FALSE
+<pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
 
 ``` r
@@ -458,7 +453,7 @@ her2_expressed <- her2_expression_level > 0
 her2_expressed
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] FALSE
+<pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
 
 <br>
@@ -469,7 +464,7 @@ her2_expressed
 class(her2_expressed)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "logical"
+<pre style="color: black; background-color: lightyellow;">## [1] "logical"
 </pre>
 
 ``` r
@@ -477,21 +472,21 @@ class(her2_expressed)
 is.numeric(gene)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] FALSE
+<pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
 
 ``` r
 is.numeric(a)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] TRUE
+<pre style="color: black; background-color: lightyellow;">## [1] TRUE
 </pre>
 
 ``` r
 is.character(gene)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] TRUE
+<pre style="color: black; background-color: lightyellow;">## [1] TRUE
 </pre>
 
 <br>
@@ -502,14 +497,14 @@ is.character(gene)
 b
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 0.03
+<pre style="color: black; background-color: lightyellow;">## [1] 0.03
 </pre>
 
 ``` r
 as.character(b)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "0.03"
+<pre style="color: black; background-color: lightyellow;">## [1] "0.03"
 </pre>
 
 <br>
@@ -521,7 +516,7 @@ What happens when one converts a logical variable to numeric?
 her2_expressed
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] FALSE
+<pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
 
 ``` r
@@ -529,14 +524,14 @@ her2_expressed
 as.numeric(her2_expressed)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 0
+<pre style="color: black; background-color: lightyellow;">## [1] 0
 </pre>
 
 ``` r
 her2_expressed + 1
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 1
+<pre style="color: black; background-color: lightyellow;">## [1] 1
 </pre>
 
 <br>
@@ -603,7 +598,7 @@ submitButton1.addEventListener('click', function() {showResults(myQuestions1, qu
 
 # Topic 2. Basic data structures in R
 
-<pre style="color: green; background-color: #f0f0f0;"><table class="table table-striped" style="font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;">
+<pre style="color: black; background-color: lightyellow;"><table class="table table-striped" style="font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">  </th>
@@ -640,7 +635,7 @@ gene_names <- c("ESR1", "p53", "PI3K", "BRCA1", "EGFR")
 gene_names
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "ESR1"  "p53"   "PI3K"  "BRCA1" "EGFR"
+<pre style="color: black; background-color: lightyellow;">## [1] "ESR1"  "p53"   "PI3K"  "BRCA1" "EGFR"
 </pre>
 
 ``` r
@@ -648,7 +643,7 @@ gene_expression <- c(0, 100, 50, 200, 80)
 gene_expression
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1]   0 100  50 200  80
+<pre style="color: black; background-color: lightyellow;">## [1]   0 100  50 200  80
 </pre>
 
 <br>
@@ -661,7 +656,7 @@ names(gene_expression) <- c("ESR1", "p53", "PI3K", "BRCA1", "EGFR")
 gene_expression
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##  ESR1   p53  PI3K BRCA1  EGFR 
+<pre style="color: black; background-color: lightyellow;">##  ESR1   p53  PI3K BRCA1  EGFR 
 ##     0   100    50   200    80
 </pre>
 
@@ -671,7 +666,7 @@ names(gene_expression) <- gene_names
 gene_expression
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##  ESR1   p53  PI3K BRCA1  EGFR 
+<pre style="color: black; background-color: lightyellow;">##  ESR1   p53  PI3K BRCA1  EGFR 
 ##     0   100    50   200    80
 </pre>
 
@@ -684,7 +679,7 @@ gene_expression <- c(ESR1=0, p53=100, PI3K=50, BRCA1=200, EGFR=80)
 gene_expression
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##  ESR1   p53  PI3K BRCA1  EGFR 
+<pre style="color: black; background-color: lightyellow;">##  ESR1   p53  PI3K BRCA1  EGFR 
 ##     0   100    50   200    80
 </pre>
 
@@ -696,7 +691,7 @@ gene_expression
 length(gene_expression)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 5
+<pre style="color: black; background-color: lightyellow;">## [1] 5
 </pre>
 
 ##### NOTE: a vector can only hold elements of the same type. If there are a mixture of data types, they will be coerced according to the coersion rule mentioned earlier in this documentation.
@@ -710,7 +705,7 @@ disease_stage <- factor(c("Stage1", "Stage2", "Stage2", "Stage3", "Stage1", "Sta
 disease_stage
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] Stage1 Stage2 Stage2 Stage3 Stage1 Stage4
+<pre style="color: black; background-color: lightyellow;">## [1] Stage1 Stage2 Stage2 Stage3 Stage1 Stage4
 ## Levels: Stage1 Stage2 Stage3 Stage4
 </pre>
 
@@ -722,7 +717,7 @@ disease_stage
 levels(disease_stage)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "Stage1" "Stage2" "Stage3" "Stage4"
+<pre style="color: black; background-color: lightyellow;">## [1] "Stage1" "Stage2" "Stage3" "Stage4"
 </pre>
 
 ##### A function to compactly display the internal structure of an R object is str(). Please use str() to display the internal structure of the object we just created *disease_stage*. It shows that *disease_stage* is a factor with four levels: “Stage1”, “Stage2”, “Stage3”, etc… The integer numbers after the colon shows that these levels are encoded under the hood by integer values: the first level is 1, the second level is 2, and so on. Basically, when *factor* function is called, R first scan through the vector to determine how many different categories there are, then it converts the character vector to a vector of integer values, with each integer value labeled with a category.
@@ -731,7 +726,7 @@ levels(disease_stage)
 str(disease_stage)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##  Factor w/ 4 levels "Stage1","Stage2",..: 1 2 2 3 1 4
+<pre style="color: black; background-color: lightyellow;">##  Factor w/ 4 levels "Stage1","Stage2",..: 1 2 2 3 1 4
 </pre>
 
 ##### By default, R infers the factor levels by ordering the unique elements in a factor alphanumerically. One may specifically define the factor levels at the creation of the factor.
@@ -742,7 +737,7 @@ disease_stage <- factor(c("Stage1", "Stage2", "Stage2", "Stage3", "Stage1", "Sta
 str(disease_stage)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##  Factor w/ 4 levels "Stage2","Stage1",..: 2 1 1 3 2 4
+<pre style="color: black; background-color: lightyellow;">##  Factor w/ 4 levels "Stage2","Stage1",..: 2 1 1 3 2 4
 </pre>
 
 If you want to know the number of individuals at each levels, there are
@@ -752,7 +747,7 @@ two functions: *summary* and *table*.
 summary(disease_stage)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## Stage2 Stage1 Stage3 Stage4 
+<pre style="color: black; background-color: lightyellow;">## Stage2 Stage1 Stage3 Stage4 
 ##      2      2      1      1
 </pre>
 
@@ -760,7 +755,7 @@ summary(disease_stage)
 table(disease_stage)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## disease_stage
+<pre style="color: black; background-color: lightyellow;">## disease_stage
 ## Stage2 Stage1 Stage3 Stage4 
 ##      2      2      1      1
 </pre>
@@ -834,7 +829,7 @@ my_matrix <- cbind(col1, col2, col3)
 my_matrix
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      col1 col2 col3
+<pre style="color: black; background-color: lightyellow;">##      col1 col2 col3
 ## [1,]    1    2    8
 ## [2,]    3   18   37
 ## [3,]    8   27  267
@@ -848,14 +843,14 @@ nums <- c(col1, col2, col3)
 nums
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##  [1]   1   3   8   9   2  18  27  10   8  37 267  19
+<pre style="color: black; background-color: lightyellow;">##  [1]   1   3   8   9   2  18  27  10   8  37 267  19
 </pre>
 
 ``` r
 matrix(nums, ncol=2)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      [,1] [,2]
+<pre style="color: black; background-color: lightyellow;">##      [,1] [,2]
 ## [1,]    1   27
 ## [2,]    3   10
 ## [3,]    8    8
@@ -869,7 +864,7 @@ rownames(my_matrix) <- c("row1", "row2", "row3", "row4")
 my_matrix
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      col1 col2 col3
+<pre style="color: black; background-color: lightyellow;">##      col1 col2 col3
 ## row1    1    2    8
 ## row2    3   18   37
 ## row3    8   27  267
@@ -880,7 +875,7 @@ my_matrix
 t(my_matrix) # transposing the matrix
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      row1 row2 row3 row4
+<pre style="color: black; background-color: lightyellow;">##      row1 row2 row3 row4
 ## col1    1    3    8    9
 ## col2    2   18   27   10
 ## col3    8   37  267   19
@@ -892,21 +887,21 @@ t(my_matrix) # transposing the matrix
 ncol(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 3
+<pre style="color: black; background-color: lightyellow;">## [1] 3
 </pre>
 
 ``` r
 nrow(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 4
+<pre style="color: black; background-color: lightyellow;">## [1] 4
 </pre>
 
 ``` r
 dim(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] 4 3
+<pre style="color: black; background-color: lightyellow;">## [1] 4 3
 </pre>
 
 ##### Calculations with numeric matrices.
@@ -915,7 +910,7 @@ dim(my_matrix)
 my_matrix * 3
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      col1 col2 col3
+<pre style="color: black; background-color: lightyellow;">##      col1 col2 col3
 ## row1    3    6   24
 ## row2    9   54  111
 ## row3   24   81  801
@@ -926,7 +921,7 @@ my_matrix * 3
 log10(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##           col1     col2     col3
+<pre style="color: black; background-color: lightyellow;">##           col1     col2     col3
 ## row1 0.0000000 0.301030 0.903090
 ## row2 0.4771213 1.255273 1.568202
 ## row3 0.9030900 1.431364 2.426511
@@ -939,7 +934,7 @@ Total of each row.
 rowSums(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## row1 row2 row3 row4 
+<pre style="color: black; background-color: lightyellow;">## row1 row2 row3 row4 
 ##   11   58  302   38
 </pre>
 
@@ -949,7 +944,7 @@ Total of each column.
 colSums(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## col1 col2 col3 
+<pre style="color: black; background-color: lightyellow;">## col1 col2 col3 
 ##   21   57  331
 </pre>
 
@@ -968,7 +963,7 @@ meta.data <- data.frame(patients_name=patients_name, disease_stage=disease_stage
 meta.data
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name disease_stage Family_history patients_age
+<pre style="color: black; background-color: lightyellow;">##   patients_name disease_stage Family_history patients_age
 ## 1      Patient1        Stage1              Y           31
 ## 2      Patient2        Stage2              N           40
 ## 3      Patient3        Stage2              Y           39
@@ -983,14 +978,14 @@ meta.data
 is.data.frame(meta.data)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] TRUE
+<pre style="color: black; background-color: lightyellow;">## [1] TRUE
 </pre>
 
 ``` r
 is.data.frame(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] FALSE
+<pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
 
 ###### One can convert a matrix object to a data frame using the function as.data.frame().
@@ -999,7 +994,7 @@ is.data.frame(my_matrix)
 class(my_matrix)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "matrix" "array"
+<pre style="color: black; background-color: lightyellow;">## [1] "matrix" "array"
 </pre>
 
 ``` r
@@ -1007,7 +1002,7 @@ my_data <- as.data.frame(my_matrix)
 class(my_data)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">## [1] "data.frame"
+<pre style="color: black; background-color: lightyellow;">## [1] "data.frame"
 </pre>
 
 ##### A data frame can be transposed in the similar way as a matrix. However, the result of transposing a data frame might not be a data frame anymore.
@@ -1016,7 +1011,7 @@ class(my_data)
 my_data
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      col1 col2 col3
+<pre style="color: black; background-color: lightyellow;">##      col1 col2 col3
 ## row1    1    2    8
 ## row2    3   18   37
 ## row3    8   27  267
@@ -1027,7 +1022,7 @@ my_data
 t(my_data)
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##      row1 row2 row3 row4
+<pre style="color: black; background-color: lightyellow;">##      row1 row2 row3 row4
 ## col1    1    3    8    9
 ## col2    2   18   27   10
 ## col3    8   37  267   19
@@ -1040,7 +1035,7 @@ t(my_data)
 meta.data
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name disease_stage Family_history patients_age
+<pre style="color: black; background-color: lightyellow;">##   patients_name disease_stage Family_history patients_age
 ## 1      Patient1        Stage1              Y           31
 ## 2      Patient2        Stage2              N           40
 ## 3      Patient3        Stage2              Y           39
@@ -1054,7 +1049,7 @@ meta.data$BRCA <- c("YES", "NO", "YES", "YES", "YES", "NO")
 meta.data
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name disease_stage Family_history patients_age BRCA
+<pre style="color: black; background-color: lightyellow;">##   patients_name disease_stage Family_history patients_age BRCA
 ## 1      Patient1        Stage1              Y           31  YES
 ## 2      Patient2        Stage2              N           40   NO
 ## 3      Patient3        Stage2              Y           39  YES
@@ -1070,7 +1065,7 @@ meta.data
 cbind(meta.data, Race=c("AJ", "AS", "AA", "NE", "NE", "AS"))
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name disease_stage Family_history patients_age BRCA Race
+<pre style="color: black; background-color: lightyellow;">##   patients_name disease_stage Family_history patients_age BRCA Race
 ## 1      Patient1        Stage1              Y           31  YES   AJ
 ## 2      Patient2        Stage2              N           40   NO   AS
 ## 3      Patient3        Stage2              Y           39  YES   AA
@@ -1084,7 +1079,7 @@ cbind(meta.data, Race=c("AJ", "AS", "AA", "NE", "NE", "AS"))
 rbind(meta.data, data.frame(patients_name="Patient7", disease_stage="Stage4", Family_history="Y", patients_age=48, BRCA="YES"))
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name disease_stage Family_history patients_age BRCA
+<pre style="color: black; background-color: lightyellow;">##   patients_name disease_stage Family_history patients_age BRCA
 ## 1      Patient1        Stage1              Y           31  YES
 ## 2      Patient2        Stage2              N           40   NO
 ## 3      Patient3        Stage2              Y           39  YES
@@ -1101,7 +1096,7 @@ expression.data <- data.frame(patients_name=c("Patient3", "Patient4", "Patient5"
 expression.data
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name   EGFR   TP53
+<pre style="color: black; background-color: lightyellow;">##   patients_name   EGFR   TP53
 ## 1      Patient3     10  16493
 ## 2      Patient4    472     72
 ## 3      Patient5 103784   8193
@@ -1115,7 +1110,7 @@ md2 <- merge(meta.data, expression.data, by="patients_name")
 md2
 ```
 
-<pre style="color: green; background-color: #f0f0f0;">##   patients_name disease_stage Family_history patients_age BRCA   EGFR   TP53
+<pre style="color: black; background-color: lightyellow;">##   patients_name disease_stage Family_history patients_age BRCA   EGFR   TP53
 ## 1      Patient1        Stage1              Y           31  YES   1782   1849
 ## 2      Patient2        Stage2              N           40   NO    187 173894
 ## 3      Patient3        Stage2              Y           39  YES     10  16493
