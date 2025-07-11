@@ -83,7 +83,7 @@ function showResults(myq, qc, rc){
 
 
 ```{css echo=FALSE}
-pre {
+.colsel {
   background-color: #eef;  /* light purple-blue for output blocks */
 }
 ```
