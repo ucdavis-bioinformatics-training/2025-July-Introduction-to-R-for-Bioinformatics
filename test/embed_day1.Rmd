@@ -67,6 +67,11 @@ function showResults(myq, qc, rc){
 }
 </script>
 
+<style>
+.colsel {
+background-color: lightyellow
+}
+</style>
 
 ```{r echo=FALSE}
 library(knitr)

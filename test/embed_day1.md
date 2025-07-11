@@ -56,6 +56,11 @@ function showResults(myq, qc, rc){
   rc.innerHTML = `${numCorrect} out of ${myq.length}`;
 }
 </script>
+<style>
+.colsel {
+background-color: lightyellow
+}
+</style>
 
 # R and RStudio
 
