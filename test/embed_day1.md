@@ -404,7 +404,7 @@ b
 
 <br>
 
-##### Examples of character values.
+Examples of character values.
 
 ``` r
 # assign a string "BRCA1" to variable gene
@@ -426,7 +426,7 @@ hello
 
 <br>
 
-##### Examples of logical values.
+Examples of logical values.
 
 ``` r
 # assign logical value "TRUE" to variable brca1_expressed
@@ -458,7 +458,7 @@ her2_expressed
 
 <br>
 
-##### To find out the type of variable.
+To find out the type of variable.
 
 ``` r
 class(her2_expressed)
@@ -491,7 +491,10 @@ is.character(gene)
 
 <br>
 
-##### In the case that one compares two different classes of data, the coersion rule in R is logical -\> integer -\> numeric -\> complex -\> character . The following is an example of converting a numeric variable to character.
+In the case that one compares two different classes of data, the
+coersion rule in R is logical -\> integer -\> numeric -\> complex -\>
+character . The following is an example of converting a numeric variable
+to character.
 
 ``` r
 b
@@ -536,7 +539,8 @@ her2_expressed + 1
 
 <br>
 
-##### A logical *TRUE* is converted to integer 1 and a logical *FALSE* is converted to integer 0.
+A logical *TRUE* is converted to integer 1 and a logical *FALSE* is
+converted to integer 0.
 
 <br>
 
@@ -648,7 +652,7 @@ gene_expression
 
 <br>
 
-##### One can give names to the elements of an atomic vector.
+One can give names to the elements of an atomic vector.
 
 ``` r
 # assign names to a vector by specifying them
@@ -672,7 +676,7 @@ gene_expression
 
 <br>
 
-##### Or One may create a vector with named elements from scratch.
+Or One may create a vector with named elements from scratch.
 
 ``` r
 gene_expression <- c(ESR1=0, p53=100, PI3K=50, BRCA1=200, EGFR=80)
@@ -685,7 +689,7 @@ gene_expression
 
 <br>
 
-##### To find out the length of a vector:
+To find out the length of a vector:
 
 ``` r
 length(gene_expression)
@@ -694,7 +698,9 @@ length(gene_expression)
 <pre style="color: black; background-color: lightyellow;">## [1] 5
 </pre>
 
-##### NOTE: a vector can only hold elements of the same type. If there are a mixture of data types, they will be coerced according to the coersion rule mentioned earlier in this documentation.
+NOTE: a vector can only hold elements of the same type. If there are a
+mixture of data types, they will be coerced according to the coersion
+rule mentioned earlier in this documentation.
 
 <br>
 
@@ -711,7 +717,8 @@ disease_stage
 
 <br>
 
-##### In R, categories of the data are stored as factor levels. The function levels() can be used to access the factor levels.
+In R, categories of the data are stored as factor levels. The function
+levels() can be used to access the factor levels.
 
 ``` r
 levels(disease_stage)
@@ -720,7 +727,16 @@ levels(disease_stage)
 <pre style="color: black; background-color: lightyellow;">## [1] "Stage1" "Stage2" "Stage3" "Stage4"
 </pre>
 
-##### A function to compactly display the internal structure of an R object is str(). Please use str() to display the internal structure of the object we just created *disease_stage*. It shows that *disease_stage* is a factor with four levels: “Stage1”, “Stage2”, “Stage3”, etc… The integer numbers after the colon shows that these levels are encoded under the hood by integer values: the first level is 1, the second level is 2, and so on. Basically, when *factor* function is called, R first scan through the vector to determine how many different categories there are, then it converts the character vector to a vector of integer values, with each integer value labeled with a category.
+A function to compactly display the internal structure of an R object is
+str(). Please use str() to display the internal structure of the object
+we just created *disease_stage*. It shows that *disease_stage* is a
+factor with four levels: “Stage1”, “Stage2”, “Stage3”, etc… The integer
+numbers after the colon shows that these levels are encoded under the
+hood by integer values: the first level is 1, the second level is 2, and
+so on. Basically, when *factor* function is called, R first scan through
+the vector to determine how many different categories there are, then it
+converts the character vector to a vector of integer values, with each
+integer value labeled with a category.
 
 ``` r
 str(disease_stage)
@@ -729,7 +745,9 @@ str(disease_stage)
 <pre style="color: black; background-color: lightyellow;">##  Factor w/ 4 levels "Stage1","Stage2",..: 1 2 2 3 1 4
 </pre>
 
-##### By default, R infers the factor levels by ordering the unique elements in a factor alphanumerically. One may specifically define the factor levels at the creation of the factor.
+By default, R infers the factor levels by ordering the unique elements
+in a factor alphanumerically. One may specifically define the factor
+levels at the creation of the factor.
 
 ``` r
 disease_stage <- factor(c("Stage1", "Stage2", "Stage2", "Stage3", "Stage1", "Stage4"), levels=c("Stage2", "Stage1", "Stage3", "Stage4"))
@@ -836,7 +854,7 @@ my_matrix
 ## [4,]    9   10   19
 </pre>
 
-##### One other way to create a matrix is to use *matrix()* function.
+One other way to create a matrix is to use *matrix()* function.
 
 ``` r
 nums <- c(col1, col2, col3)
@@ -881,7 +899,7 @@ t(my_matrix) # transposing the matrix
 ## col3    8   37  267   19
 </pre>
 
-##### To find out the dimension of a matrix:
+To find out the dimension of a matrix:
 
 ``` r
 ncol(my_matrix)
@@ -904,7 +922,7 @@ dim(my_matrix)
 <pre style="color: black; background-color: lightyellow;">## [1] 4 3
 </pre>
 
-##### Calculations with numeric matrices.
+Calculations with numeric matrices.
 
 ``` r
 my_matrix * 3
@@ -948,11 +966,14 @@ colSums(my_matrix)
 ##   21   57  331
 </pre>
 
-##### There is a data structure *Array* in R, that holds multi-dimensional (d \> 2) data and is a generalized version of a matrix. *Matrix* is used much more commonly than *Array*, therefore we are not going to talk about *Array* here.
+There is a data structure *Array* in R, that holds multi-dimensional (d
+\> 2) data and is a generalized version of a matrix. *Matrix* is used
+much more commonly than *Array*, therefore we are not going to talk
+about *Array* here.
 
 #### Data frames: a data frame is like a matrix but can have columns with different types (numeric, character, logical).
 
-##### A data frame can be created using the function data.frame().
+A data frame can be created using the function data.frame().
 
 ``` r
 # creating a data frame using pre-defined vectors
@@ -972,7 +993,8 @@ meta.data
 ## 6      Patient6        Stage4              Y           65
 </pre>
 
-###### To check whether a data is a data frame, use the function is.data.frame().
+To check whether a data is a data frame, use the function
+is.data.frame().
 
 ``` r
 is.data.frame(meta.data)
@@ -988,7 +1010,8 @@ is.data.frame(my_matrix)
 <pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
 
-###### One can convert a matrix object to a data frame using the function as.data.frame().
+One can convert a matrix object to a data frame using the function
+as.data.frame().
 
 ``` r
 class(my_matrix)
@@ -1005,7 +1028,9 @@ class(my_data)
 <pre style="color: black; background-color: lightyellow;">## [1] "data.frame"
 </pre>
 
-##### A data frame can be transposed in the similar way as a matrix. However, the result of transposing a data frame might not be a data frame anymore.
+A data frame can be transposed in the similar way as a matrix. However,
+the result of transposing a data frame might not be a data frame
+anymore.
 
 ``` r
 my_data
@@ -1028,7 +1053,7 @@ t(my_data)
 ## col3    8   37  267   19
 </pre>
 
-##### A data frame can be extended.
+A data frame can be extended.
 
 ``` r
 # add a column that has the information on harmful mutations in BRCA1/BRCA2 genes for each patient.
@@ -1058,7 +1083,11 @@ meta.data
 ## 6      Patient6        Stage4              Y           65   NO
 </pre>
 
-##### A data frame can also be extended using the functions cbind() and rbind(), for adding columns and rows respectively. When using cbind(), the number of values in the new column must match the number of rows in the data frame. When using rbind(), the two data frames must have the same variables/columns.
+A data frame can also be extended using the functions cbind() and
+rbind(), for adding columns and rows respectively. When using cbind(),
+the number of values in the new column must match the number of rows in
+the data frame. When using rbind(), the two data frames must have the
+same variables/columns.
 
 ``` r
 # add a column that has the information on the racial information for each patient.
@@ -1089,7 +1118,8 @@ rbind(meta.data, data.frame(patients_name="Patient7", disease_stage="Stage4", Fa
 ## 7      Patient7        Stage4              Y           48  YES
 </pre>
 
-##### One may use the function *merge* to merge two data frames horizontally, based on one or more common key variables.
+One may use the function *merge* to merge two data frames horizontally,
+based on one or more common key variables.
 
 ``` r
 expression.data <- data.frame(patients_name=c("Patient3", "Patient4", "Patient5", "Patient1", "Patient2", "Patient6"), EGFR=c(10, 472, 103784, 1782, 187, 18289), TP53=c(16493, 72, 8193, 1849, 173894, 1482))
