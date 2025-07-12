@@ -402,8 +402,6 @@ b
 <pre style="color: black; background-color: lightyellow;">## [1] 0.03
 </pre>
 
-<br>
-
 Examples of character values.
 
 ``` r
@@ -423,8 +421,6 @@ hello
 
 <pre style="color: black; background-color: lightyellow;">## [1] "Hello World"
 </pre>
-
-<br>
 
 Examples of logical values.
 
@@ -455,8 +451,6 @@ her2_expressed
 
 <pre style="color: black; background-color: lightyellow;">## [1] FALSE
 </pre>
-
-<br>
 
 To find out the type of variable.
 
@@ -489,8 +483,6 @@ is.character(gene)
 <pre style="color: black; background-color: lightyellow;">## [1] TRUE
 </pre>
 
-<br>
-
 In the case that one compares two different classes of data, the
 coersion rule in R is logical -\> integer -\> numeric -\> complex -\>
 character . The following is an example of converting a numeric variable
@@ -509,8 +501,6 @@ as.character(b)
 
 <pre style="color: black; background-color: lightyellow;">## [1] "0.03"
 </pre>
-
-<br>
 
 What happens when one converts a logical variable to numeric?
 
@@ -537,12 +527,8 @@ her2_expressed + 1
 <pre style="color: black; background-color: lightyellow;">## [1] 1
 </pre>
 
-<br>
-
 A logical *TRUE* is converted to integer 1 and a logical *FALSE* is
 converted to integer 0.
-
-<br>
 
 ## Quiz 1
 
@@ -630,8 +616,6 @@ submitButton1.addEventListener('click', function() {showResults(myQuestions1, qu
 </table>
 &#10;</pre>
 
-<br>
-
 #### Atomic vectors: an atomic vector is a combination of multiple values(numeric, character or logical) in the same object. An atomic vector is created using the function c().
 
 ``` r
@@ -649,8 +633,6 @@ gene_expression
 
 <pre style="color: black; background-color: lightyellow;">## [1]   0 100  50 200  80
 </pre>
-
-<br>
 
 One can give names to the elements of an atomic vector.
 
@@ -674,8 +656,6 @@ gene_expression
 ##     0   100    50   200    80
 </pre>
 
-<br>
-
 Or One may create a vector with named elements from scratch.
 
 ``` r
@@ -686,8 +666,6 @@ gene_expression
 <pre style="color: black; background-color: lightyellow;">##  ESR1   p53  PI3K BRCA1  EGFR 
 ##     0   100    50   200    80
 </pre>
-
-<br>
 
 To find out the length of a vector:
 
@@ -702,8 +680,6 @@ NOTE: a vector can only hold elements of the same type. If there are a
 mixture of data types, they will be coerced according to the coersion
 rule mentioned earlier in this documentation.
 
-<br>
-
 #### Factors: a factor is a special vector. It stores categorical data, which are important in statistical modeling and can only take on a limited number of pre-defined values. The function factor() can be used to create a factor.
 
 ``` r
@@ -714,8 +690,6 @@ disease_stage
 <pre style="color: black; background-color: lightyellow;">## [1] Stage1 Stage2 Stage2 Stage3 Stage1 Stage4
 ## Levels: Stage1 Stage2 Stage3 Stage4
 </pre>
-
-<br>
 
 In R, categories of the data are stored as factor levels. The function
 levels() can be used to access the factor levels.
@@ -818,7 +792,7 @@ myQuestions2 = [
     correctAnswer: "d"
   },
   {
-    question: "What would the levels be for the following vector as a factor:<br>c('a','C','d','b',1,'!')",
+    question: "What would the levels be for the following vector as a factor:c('a','C','d','b',1,'!')",
     answers: {
       a: "a b C d 1 !",
       b: "! 1 a b d C",
@@ -831,8 +805,6 @@ myQuestions2 = [
 buildQuiz(myQuestions2, quizContainer2);
 submitButton2.addEventListener('click', function() {showResults(myQuestions2, quizContainer2, resultsContainer2);});
 </script>
-
-<br>
 
 ------------------------------------------------------------------------
 
@@ -1154,8 +1126,6 @@ Save your workspace to a file so we can load it for day 2:
 ``` r
 save.image("day1.RData")
 ```
-
-<br>
 
 ## Quiz 3
 

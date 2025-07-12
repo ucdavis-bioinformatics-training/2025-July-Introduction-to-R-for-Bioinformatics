@@ -271,7 +271,7 @@ a
 b <- 3e-2
 b
 ```
-<br>
+
 
 Examples of character values.
 
@@ -283,7 +283,7 @@ gene
 hello <- "Hello World"
 hello
 ```
-<br>
+
 
 Examples of logical values.
 
@@ -299,7 +299,7 @@ her2_expression_level <- 0
 her2_expressed <- her2_expression_level > 0
 her2_expressed
 ```
-<br>
+
 
 To find out the type of variable.
 
@@ -311,7 +311,7 @@ is.numeric(a)
 is.character(gene)
 
 ```
-<br>
+
 
 In the case that one compares two different classes of data, the coersion rule in R is `r colFmt("logical -> integer -> numeric -> complex -> character", 'red')` . The following is an example of converting a numeric variable to character.
 
@@ -320,7 +320,7 @@ In the case that one compares two different classes of data, the coersion rule i
 b
 as.character(b)
 ```
-<br>
+
 
 What happens when one converts a logical variable to numeric?
 
@@ -334,11 +334,11 @@ as.numeric(her2_expressed)
 her2_expressed + 1
 
 ```
-<br>
+
 
 A logical *TRUE* is converted to integer 1 and a logical *FALSE* is converted to integer 0.
 
-<br>
+
 
 ## Quiz 1
 
@@ -395,7 +395,7 @@ Topic 2. Basic data structures in R
 
 kable(data.frame(Homogeneous=c("Atomic vector", "Matrix", "Array"), Heterogeneous=c("List", "Data frame", ""), row.names=c("1d", "2d", "Nd"), stringsAsFactors=F), align='c') %>% kable_styling(bootstrap_options="striped", full_width=F, position="center", font_size=18)
 ```
-<br>
+
 
 
 #### Atomic vectors: an atomic vector is a combination of multiple values(numeric, character or logical) in the same object. An atomic vector is created using the function c().
@@ -407,7 +407,7 @@ gene_names
 gene_expression <- c(0, 100, 50, 200, 80)
 gene_expression
 ```
-<br>
+
 
 One can give names to the elements of an atomic vector.
 ```{r}
@@ -419,14 +419,14 @@ gene_expression
 names(gene_expression) <- gene_names
 gene_expression
 ```
-<br>
+
 
 Or One may create a vector with named elements from scratch.
 ```{r}
 gene_expression <- c(ESR1=0, p53=100, PI3K=50, BRCA1=200, EGFR=80)
 gene_expression
 ```
-<br>
+
 
 To find out the length of a vector:
 ```{r}
@@ -436,7 +436,7 @@ length(gene_expression)
    
 `r colFmt("NOTE: a vector can only hold elements of the same type. If there are a mixture of data types, they will be coerced according to the coersion rule mentioned earlier in this documentation.", 'red')`  
 
-<br>
+
 
 #### Factors: a factor is a special vector. It stores categorical data, which are important in statistical modeling and can only take on a limited number of pre-defined values. The function factor() can be used to create a factor.
 
@@ -444,7 +444,7 @@ length(gene_expression)
 disease_stage <- factor(c("Stage1", "Stage2", "Stage2", "Stage3", "Stage1", "Stage4"))
 disease_stage
 ```
-<br>
+
 
 In R, categories of the data are stored as factor levels. The function levels() can be used to access the factor levels.
 
@@ -511,7 +511,7 @@ myQuestions2 = [
     correctAnswer: "d"
   },
   {
-    question: "What would the levels be for the following vector as a factor:<br>c('a','C','d','b',1,'!')",
+    question: "What would the levels be for the following vector as a factor:c('a','C','d','b',1,'!')",
     answers: {
       a: "a b C d 1 !",
       b: "! 1 a b d C",
@@ -526,7 +526,7 @@ submitButton2.addEventListener('click', function() {showResults(myQuestions2, qu
 </script>
 
 
-<br>
+
 
 ---
 
@@ -663,7 +663,7 @@ Save your workspace to a file so we can load it for day 2:
 save.image("day1.RData")
 ```
 
-<br>
+
 
 ## Quiz 3
 
