@@ -382,7 +382,7 @@ the expected output.**
 
 #### There are 5 basic atomic classes: numeric (integer, complex), character, logical
 
-##### Examples of numeric values.
+Examples of numeric values.
 
 ``` r
 # assign number 150 to variable a.
