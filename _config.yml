@@ -22,14 +22,14 @@ navigation:
 
   - heading: Introduction to R
   - title: Introduction to R Day 1
-    url: test/embed_day1
+    url: R/Intro2R_day1
   - title: Introduction to R Day 2
-    url: test/embed_day2
+    url: R/Intro2R_day2
   - title: Introduction to R Day 3
     url: R/Intro2R_day3
 
-  - title: Challenge solutions
-    url: R/challenge_solutions
+  # - title: Challenge solutions
+  #  url: R/challenge_solutions
 
   - heading: ETC
   - title: Closing thoughts
