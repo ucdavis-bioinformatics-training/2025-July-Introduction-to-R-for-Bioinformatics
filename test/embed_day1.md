@@ -285,19 +285,19 @@ In R, to get help information on a funciton, one may use the command:
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:center;"> \&lt; </td>
+   <td style="text-align:center;"> &lt; </td>
    <td style="text-align:center;"> Less than </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> \&gt; </td>
+   <td style="text-align:center;"> &gt; </td>
    <td style="text-align:center;"> Greater than </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> \&lt;= </td>
+   <td style="text-align:center;"> &lt;= </td>
    <td style="text-align:center;"> Less than or equal to </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> \&gt;= </td>
+   <td style="text-align:center;"> &gt;= </td>
    <td style="text-align:center;"> Greater than or equal to </td>
   </tr>
   <tr>
@@ -333,11 +333,11 @@ In R, to get help information on a funciton, one may use the command:
    <td style="text-align:center;"> Logical AND </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> \&amp;#124; </td>
+   <td style="text-align:center;"> &amp;#124; </td>
    <td style="text-align:center;"> Element-wise logical OR </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> \&amp;#124;\&amp;#124; </td>
+   <td style="text-align:center;"> &amp;#124;&amp;#124; </td>
    <td style="text-align:center;"> Logical OR </td>
   </tr>
 </tbody>
