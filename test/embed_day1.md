@@ -316,34 +316,28 @@ In R, to get help information on a funciton, one may use the command:
  <thead>
   <tr>
    <th style="text-align:center;"> Operator </th>
-   <th style="text-align:center;"> escape </th>
    <th style="text-align:center;"> Description </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:center;"> ! </td>
-   <td style="text-align:center;"> FALSE </td>
    <td style="text-align:center;"> Logical NOT </td>
   </tr>
   <tr>
    <td style="text-align:center;"> &amp; </td>
-   <td style="text-align:center;"> FALSE </td>
    <td style="text-align:center;"> Element-wise logical AND </td>
   </tr>
   <tr>
    <td style="text-align:center;"> &amp;&amp; </td>
-   <td style="text-align:center;"> FALSE </td>
    <td style="text-align:center;"> Logical AND </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> &amp;#124; </td>
-   <td style="text-align:center;"> FALSE </td>
+   <td style="text-align:center;"> \&amp;#124; </td>
    <td style="text-align:center;"> Element-wise logical OR </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> &amp;#124;&amp;#124; </td>
-   <td style="text-align:center;"> FALSE </td>
+   <td style="text-align:center;"> \&amp;#124;\&amp;#124; </td>
    <td style="text-align:center;"> Logical OR </td>
   </tr>
 </tbody>
