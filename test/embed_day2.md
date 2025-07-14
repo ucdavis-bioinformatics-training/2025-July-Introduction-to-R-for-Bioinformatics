@@ -71,7 +71,7 @@ load("day1.RData")
 
 #### A list is an ordered collection of objects, which can be any type of R objects (vectors, matrices, data frames, even lists).
 
-##### A list is constructed using the function list().
+A list is constructed using the function list().
 
 ``` r
 my_list <- list(1:5, "a", c(TRUE, FALSE, FALSE), c(3.2, 103.0, 82.3))
@@ -102,7 +102,7 @@ str(my_list)
 ##  $ : num [1:3] 3.2 103 82.3
 </pre>
 
-##### One could construct a list by giving names to elements.
+One could construct a list by giving names to elements.
 
 ``` r
 my_list <- list(Ranking=1:5, ID="a", Test=c(TRUE, FALSE, FALSE), Score=c(3.2, 103.0, 82.3))
@@ -135,9 +135,14 @@ length(my_list)
 
 ### Subsetting data
 
-#### Subsetting allows one to access the piece of data of interest. When combinded with assignment, subsetting can modify selected pieces of data. The operators that can be used to subset data are: \[, \$, and \[\[.
+Subsetting allows one to access the piece of data of interest. When
+combinded with assignment, subsetting can modify selected pieces of
+data. The operators that can be used to subset data are: \[, \$, and
+\[\[.
 
-##### First, we are going to talk about subsetting data using \[, which is the most commonly used operator. We will start by looking at vectors and talk about four ways to subset a vector.
+First, we are going to talk about subsetting data using \[, which is the
+most commonly used operator. We will start by looking at vectors and
+talk about four ways to subset a vector.
 
 - **Positive integers** return elements at the specified positions
 
@@ -268,9 +273,8 @@ gene_names[]
 <pre style="color: black; background-color: lightyellow;">## [1] "ESR1"  "p53"   "PI3K"  "BRCA1" "EGFR"
 </pre>
 
-<br>
-
-##### Subsetting a list works in the same way as subsetting an atomic vector. Using \[ will always return a list.
+Subsetting a list works in the same way as subsetting an atomic vector.
+Using \[ will always return a list.
 
 ``` r
 my_list[1]
@@ -280,9 +284,10 @@ my_list[1]
 ## [1] 1 2 3 4 5
 </pre>
 
-<br>
-
-##### Subsetting a matrix can be done by simply generalizing the one dimension subsetting: one may supply a one dimension index for each dimension of the matrix. Blank/Nothing subsetting is now useful in keeping all rows or all columns.
+Subsetting a matrix can be done by simply generalizing the one dimension
+subsetting: one may supply a one dimension index for each dimension of
+the matrix. Blank/Nothing subsetting is now useful in keeping all rows
+or all columns.
 
 ``` r
 # get the element in the 2nd row, 3rd column
@@ -320,9 +325,10 @@ my_matrix[c(TRUE, FALSE), ]
 ## row3    8   27  267
 </pre>
 
-<br>
-
-##### Subsetting a data frame can be done similarly as subsetting a matrix. In addition, one may supply only one 1-dimensional index to subset a data frame. In this case, R will treat the data frame as a list with each column is an element in the list.
+Subsetting a data frame can be done similarly as subsetting a matrix. In
+addition, one may supply only one 1-dimensional index to subset a data
+frame. In this case, R will treat the data frame as a list with each
+column is an element in the list.
 
 ``` r
 # recall a data frame created from above: *meta.data*
@@ -363,11 +369,10 @@ meta.data[c("patients_age", "disease_stage")]
 ## 6           65        Stage4
 </pre>
 
-<br>
-
 ### Subsetting operators: **\[\[** and **\$**
 
-##### **\[\[** is similar to **\[**, except that it returns the content of the element.
+**\[\[** is similar to **\[**, except that it returns the content of the
+element.
 
 ``` r
 # recall my_list
@@ -419,9 +424,7 @@ meta.data[["disease_stage"]]
 ## Levels: Stage2 Stage1 Stage3 Stage4
 </pre>
 
-<br>
-
-##### **\$** is a shorthand for **\[\[** combined with character subsetting.
+**\$** is a shorthand for **\[\[** combined with character subsetting.
 
 ``` r
 # subsetting a list using $ 
@@ -440,9 +443,7 @@ meta.data$disease_stage
 ## Levels: Stage2 Stage1 Stage3 Stage4
 </pre>
 
-<br>
-
-##### Simplifying vs. preserving subsetting
+#### Simplifying vs. preserving subsetting
 
 We have seen some examples of simplying vs. preserving subsetting, for
 example:
@@ -521,7 +522,8 @@ columns for each row.
 
 # Topic 3. Import and export data in R
 
-##### R base function read.table() is a general funciton that can be used to read a file in table format. The data will be imported as a data frame.
+R base function read.table() is a general funciton that can be used to
+read a file in table format. The data will be imported as a data frame.
 
 ``` r
 # There is a very convenient way to read files from the internet.
@@ -562,7 +564,8 @@ head(data1)
 ## AT1G01050 1437 1577  412 1338 1051  621 1434 1552 1248 1186
 </pre>
 
-##### Depending on the format of the file, several variants of read.table() are available to make reading a file easier.
+Depending on the format of the file, several variants of read.table()
+are available to make reading a file easier.
 
 - read.csv(): for reading “comma separated value” files (.csv).
 
@@ -574,8 +577,6 @@ head(data1)
 
 - read.delim2(): for reading “tab separated value” files (“.tsv”). By
   default, comma (“,”) is used as decimal point.
-
-<br>
 
 ``` r
 # We are going to read a file over the internet by providing the url of the file.
@@ -601,9 +602,7 @@ head(data2)
 ## AT1G01050 1437 1577  412 1338 1051  621 1434 1552 1248 1186
 </pre>
 
-<br>
-
-##### R base function write.table() can be used to export data to a file.
+R base function write.table() can be used to export data to a file.
 
 ``` r
 # To write to a file called "output.txt" in your current working directory.
@@ -685,8 +684,6 @@ documents are run in R notebook mode. Under the R notebook mode, when
 executing a chunk, the code is sent to the console to be run one line at
 a time. This allows execution to stop if a line raises an error.
 
-<br>
-
 In RStudio, creating an R notebook can be done by going to the menu
 command \*\* File -\> New File -\> R Notebook \*\*.
 
@@ -708,7 +705,8 @@ To render R notebook to html/pdf/word documents can be done using the
 
 # Topic 5. Functions in R
 
-#### Invoking a function by its name, followed by the parenthesis and zero or more arguments.
+Invoking a function by its name, followed by the parenthesis and zero or
+more arguments.
 
 ``` r
 # to find out the current working directory
@@ -864,13 +862,13 @@ str(data2)
 
 ### Save data in R session
 
-#### To save history in R session
+To save history in R session
 
 savehistory(file=“Oct08.history”)
 
 loadhistory(file=“Oct08.history”)
 
-#### To save objects in R session
+To save objects in R session
 
 save(list=c(“x”, “data”), file=“Oct08.RData”)
 
@@ -996,7 +994,7 @@ a | b
    <th style="text-align:center;"> x </th>
    <th style="text-align:center;"> y </th>
    <th style="text-align:center;"> x &amp;&amp; y </th>
-   <th style="text-align:center;"> x &amp;#124;&amp;#124; y </th>
+   <th style="text-align:center;"> x \&amp;#124;\&amp;#124; y </th>
   </tr>
  </thead>
 <tbody>
