@@ -17,8 +17,8 @@ navigation:
     url: base/slack
   - title: Zoom
     url: base/zoom
-  # - title: Cheat Sheets
-  #   url: base/cheatSheetIndex
+  - title: Cheat Sheets
+    url: base/cheatSheetIndex
 
   - heading: Introduction to R
   - title: Introduction to R Day 1
